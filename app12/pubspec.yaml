@@ -1,0 +1,43 @@
+name: app12
+description: app12 live chat with firebase
+publish_to: 'none'
+version: 1.0.0+1
+environment:
+  sdk: '>=2.19.0 <3.0.0'
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_dotenv: ^5.0.2
+  intl: ^0.17.0
+  google_fonts: ^4.0.1
+  get: ^4.6.5
+  sizer: ^2.0.15
+  sidebarx: ^0.14.0
+  # doing the same thing [animation,loading spinner]
+  animated_text_kit: ^4.2.2
+  loading_animation_widget: ^1.2.0+4
+  flutter_spinkit: ^5.1.0
+  modal_progress_hud_nsn: ^0.3.0
+  scrollable_positioned_list: ^0.3.5
+
+  # firebase support
+  firebase_core: ^2.5.0
+  firebase_auth: ^4.2.6
+  cloud_firestore: ^4.4.0
+  google_sign_in: ^5.4.4
+
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - .env
+

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1025688144362",
+    "project_id": "livechat-frobese",
+    "storage_bucket": "livechat-frobese.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025688144362:android:217a762854860519b10a93",
+        "android_client_info": {
+          "package_name": "com.frobese.app12"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025688144362-4vhvor6v5ec56u035foe52psgu1q2mbu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEGkMUZSeDi6jGL8EbEJO8bU6wtT8VkKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025688144362-4vhvor6v5ec56u035foe52psgu1q2mbu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1025688144362-25f98ip10r502b5rpptmuv9uhstftf83.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.frobese.app12"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
