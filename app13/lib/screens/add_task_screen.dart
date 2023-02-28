@@ -1,3 +1,4 @@
+import 'dart:io' show Platform;
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -64,11 +65,14 @@ class AddTaskScreen extends StatelessWidget {
             },
           ),
           ElevatedButton(
-            style: const ButtonStyle(
-              padding:
-                  MaterialStatePropertyAll(EdgeInsets.symmetric(vertical: 15)),
+            style: ButtonStyle(
+              padding: MaterialStatePropertyAll(
+                (Platform.isWindows || Platform.isMacOS || Platform.isLinux)
+                    ? const EdgeInsets.symmetric(vertical: 30)
+                    : const EdgeInsets.symmetric(vertical: 15),
+              ),
               backgroundColor:
-                  MaterialStatePropertyAll<Color>(Colors.lightBlueAccent),
+                  const MaterialStatePropertyAll<Color>(Colors.lightBlueAccent),
             ),
             onPressed: () {
               if (newTaskTitle.isNotEmpty) {
@@ -76,11 +80,19 @@ class AddTaskScreen extends StatelessWidget {
                 controller.clear();
               } else {
                 if (kDebugMode) {
-                  print('leer');
+                  print('input empty!');
                 }
               }
             },
-            child: const Text('Add'),
+            child: Text(
+              'Add'.toUpperCase(),
+              style: TextStyle(
+                fontSize:
+                    (Platform.isWindows || Platform.isMacOS || Platform.isLinux)
+                        ? 24
+                        : 16,
+              ),
+            ),
           )
         ],
       ),

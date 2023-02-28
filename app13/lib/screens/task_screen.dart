@@ -16,11 +16,7 @@ class TasksScreen extends StatefulWidget {
 }
 
 class _TasksScreenState extends State<TasksScreen> {
-  List<Task> items = [
-    Task(name: 'breakfast'),
-    Task(name: 'dinner'),
-    Task(name: 'eggs'),
-  ];
+  List<Task> items = [];
 
   addItem(taskTitle) {
     Task task = Task(name: taskTitle);

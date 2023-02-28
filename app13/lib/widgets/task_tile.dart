@@ -22,7 +22,12 @@ class TaskTile extends StatelessWidget {
       title: Text(
         taskTitle,
         style: TextStyle(
+          fontSize: 19,
+          fontWeight: FontWeight.w700,
           decoration: isDone ? TextDecoration.lineThrough : null,
+          decorationColor: isDone ? Colors.red : null,
+          decorationThickness: 2,
+          decorationStyle: TextDecorationStyle.solid,
         ),
       ),
       trailing: IconButton(
