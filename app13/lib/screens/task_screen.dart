@@ -38,17 +38,18 @@ class _TasksScreenState extends State<TasksScreen> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           showModalBottomSheet(
-            shape: const RoundedRectangleBorder(
-              borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(20),
-                topRight: Radius.circular(20),
+              shape: const RoundedRectangleBorder(
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(20),
+                  topRight: Radius.circular(20),
+                ),
               ),
-            ),
-            context: context,
-            builder: (context) => AddTaskScreen(
-              addItemCallBack: addItem,
-            ),
-          );
+              context: context,
+              builder: (context) {
+                return AddTaskScreen(
+                  addItemCallBack: addItem,
+                );
+              });
         },
         backgroundColor: Colors.lightBlueAccent,
         child: const Icon(
